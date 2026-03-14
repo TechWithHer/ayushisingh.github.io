@@ -1,224 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>My Speaking Engagements</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="/js/scripts.js" defer></script>
-    <script src="js/include.js"></script> 
-    <link rel="icon" href="/images/Favicon.png" type="image/png">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speaking | Ayushi Singh</title>
+<link rel="icon" href="/images/Favicon.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/include.js" defer></script>
+<script src="/js/scripts.js" defer></script>
 </head>
-
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navbar -->
 <div include-html="components/navbar.html"></div>
 
 <!-- Hero Section -->
-<div class="hero">
-  <img src="/images/Banners/9.jpg" alt="Hero Image" class="hero-image">
-  <div class="hero-content">
-    <h1>Empowering Minds, Transforming Lives</h1>
-    <p>Helping people by making them understand human and non-human brain!</p>
-    <a href="#cta" class="cta-button">Get Started</a> 
-  </div>
-</div>
-<!-- Speaking Engagements Image Slider -->
-
-<section class="image-slider">
-  <div class="slider-wrapper">
-      <img src="images/photo1.jpg" alt="Image 1">
-      <img src="images/photo2.jpg" alt="Image 2">
-      <img src="images/photo3.jpg" alt="Image 3">
-      <img src="images/photo4.jpg" alt="Image 4">
-      <img src="images/photo5.jpg" alt="Image 5">
-      <img src="images/photo6.jpg" alt="Image 6">
-      <img src="images/photo7.jpg" alt="Image 7">
-      <img src="images/photo8.jpg" alt="Image 8">
-      <img src="images/photo9.jpg" alt="Image 9">
-      <img src="images/photo10.jpg" alt="Image 10">
+<section class="hero text-center position-relative">
+  <img src="/images/Banners/6.jpg" alt="Speaking Hero" class="img-fluid w-100 hero-image">
+  <div class="hero-content position-absolute top-50 start-50 translate-middle text-white">
+    <h1>Speaking Engagements</h1>
+    <p>Watch my talks and public presentations</p>
   </div>
 </section>
-<!-- Speaking Engagements Video -->
-<section id="speaking-engagements" class="py-5">
-  <div class="container">
-    <h1 class="text-center mb-4">Public Speaking Engagements</h1>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <!-- Video 1 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Author of Child of True Lovers (Human Psychology) - 2019</h5>
-            <p class="card-text">This video has been created for my readers and listeners who are curious about my journey as an author.</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/Sd2dKR6t6rc" allowfullscreen></iframe>
-            </div>
-          </div>
+
+<!-- Talks Grid -->
+<main class="container py-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/talk1.png" class="card-img-top" alt="Talk 1">
+        <div class="card-body">
+          <h5 class="card-title">Tech Conference 2025</h5>
+          <p class="card-text">Insights on DevOps best practices.</p>
+          <a href="#" class="btn btn-outline-primary">Watch Now</a>
         </div>
       </div>
-
-      <!-- Video 2 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Talk with Kiran Bedi & Anu Peshawaria</h5>
-            <p class="card-text">Highlights and key insights from this engaging conversation.</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/hobE592je0Y" allowfullscreen></iframe>
-            </div>
-          </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/talk2.png" class="card-img-top" alt="Talk 2">
+        <div class="card-body">
+          <h5 class="card-title">AI Workshop</h5>
+          <p class="card-text">Discussion on AI in content creation.</p>
+          <a href="#" class="btn btn-outline-primary">Watch Now</a>
         </div>
       </div>
-
-      <!-- Video 3 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Child of True Lovers - Book Launch Trailer</h5>
-            <p class="card-text">Explore the literary journey of Ayushi Singh, a prolific Indian writer.</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/yhzaYqRKlSk" allowfullscreen></iframe>
-            </div>
-          </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/talk3.png" class="card-img-top" alt="Talk 3">
+        <div class="card-body">
+          <h5 class="card-title">Webinar Series</h5>
+          <p class="card-text">Live session on productivity tools.</p>
+          <a href="#" class="btn btn-outline-primary">Watch Now</a>
         </div>
       </div>
-
-      <!-- Video 4 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">More About the Author</h5>
-            <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/LmqyEfIHNP4" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video 5 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Guest - Author Ayushi Singh | Akashwani AIR FM RAINBOW</h5>
-            <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dSchZ3sYA6g?si=C_7ndXXuunXbFfpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video 6 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Keeping it Real with Ayushi Singh</h5>
-            <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/2osnkWBbKas?si=-mLeNeKNIP47yqP1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video 7 -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">This book deserves Nobel Title - Dr R L Hangloo | Vice Chancellor, Allahabad University            </h5>
-            <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/bcO32NsX390?si=F8yhuoncrzX6O6j5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
-        </div>
-        </div>
-      </div>
-
-    <!-- Video '8' -->
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Media Coverage - Students Meetup in Allahabad and discussing the Power of Optimism        </h5>
-        <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-        <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/J4ZrdiZKcH8?si=fQxan3pEyCFgui7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
     </div>
   </div>
-  </div>
-    <!-- Video 9 -->
-
-<div class="col">
-  <div class="card h-100">
-    <div class="card-body">
-      <h5 class="card-title">Career Vs Passion | Yuvamanthan - Guest Speaker - Ayushi Singh</h5>
-      <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/r6AJzZZrvCs?si=tvNqWHC2N9SopN8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Video 10 -->
-
-<div class="col">
-  <div class="card h-100">
-    <div class="card-body">
-      <h5 class="card-title">'Majboor Hoon Saab' by Ayushi Singh Hindi Poetry YQ Gurugram Open Mic 4</h5>
-      <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Er4QicT_uP8?si=5EdNdvMJk7tXZvNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
-  </div>
-</div>
-</div>
- <!-- Video 11-->
-
- <div class="col">
-  <div class="card h-100">
-    <div class="card-body">
-      <h5 class="card-title">Beyond The Horizon - with 25 Authors</h5>
-      <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kp9TihZh770?si=-nbFHxCY8WV9Bqpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
-  </div>
-</div>
- </div>
-
- <!-- Video 12 -->
-
- <div class="col">
-  <div class="card h-100">
-    <div class="card-body">
-      <h5 class="card-title">Theist vs Atheist By Ayushi Singh and Sunny Raj Vats      </h5>
-      <p class="card-text">Further insights into Ayushi Singh's personal and professional growth.</p>
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nDWR3YOdps4?si=sjiQpwTha-86yqtL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
-  </div>
-</div>
- </div>
-</section>
+</main>
 
 <!-- Footer -->
 <div id="footer-placeholder"></div>
 <script>
-    fetch('components/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    });
+fetch('components/footer.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('footer-placeholder').innerHTML = data);
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-DRKmzJXT+ctBqzZHzS2DxKKniy58KPB5tH8vtsSYmMmA9r2owgWTFSFAmIAGJZZY" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
