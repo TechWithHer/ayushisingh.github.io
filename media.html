@@ -1,153 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Media & Awards</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="/js/scripts.js" defer></script>
-    <script src="js/include.js"></script> 
-    <link rel="icon" href="/images/Favicon.png" type="image/png">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Media & Awards | Ayushi Singh</title>
+
+<link rel="icon" href="images/Favicon.png">
+
+<style>
+
+/* Base */
+
+body{
+font-family: system-ui, sans-serif;
+margin:0;
+line-height:1.6;
+color:#111;
+background:#fff;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+border-bottom:1px solid #eee;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+margin-left:20px;
+font-size:14px;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#666;
+}
+
+/* Sections */
+
+section{
+margin-top:60px;
+}
+
+h2{
+font-size:22px;
+margin-bottom:20px;
+}
+
+/* Image Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:auto;
+border:1px solid #eee;
+}
+
+/* Awards */
+
+.awards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.award{
+border:1px solid #eee;
+padding:20px;
+}
+
+/* Footer */
+
+footer{
+margin-top:80px;
+padding:20px;
+border-top:1px solid #eee;
+text-align:center;
+font-size:14px;
+color:#777;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<!-- Navigation Bar -->
-<div include-html="components/navbar.html"></div>
+<nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="/images/Banners/11.png" alt="Hero Image" class="hero-image">
-        <h1>Innovating the Future with Python and Psychology</h1>
-        <p>Leading with Knowledge, Creating with Passion</p>
-        <a href="projects.html" class="btn">My Projects</a>
-    </section>
-    <!-- End of Hero Section -->
+<strong>Ayushi Singh</strong>
+
+<div>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="books.html">Books</a>
+<a href="speaking.html">Speaking</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
 
 
-   <!-- Content and Image Stack Section -->
-<section class="content-image-section">
-    <div class="content">
-        <h2>Your Album Title</h2>
-        <p>This section can include a description or details about the album. You can explain what the images represent, your experiences, or any other relevant information.</p>
-    </div>
+<div class="container">
 
-    <div class="image-stack">
-        <!-- Thumbnails of images -->
-        <img src="images/image1-thumb.jpg" alt="Thumbnail 1" class="thumbnail" onclick="openModal(0)">
-        <img src="images/image2-thumb.jpg" alt="Thumbnail 2" class="thumbnail" onclick="openModal(1)">
-        <img src="images/image3-thumb.jpg" alt="Thumbnail 3" class="thumbnail" onclick="openModal(2)">
-        <img src="images/image4-thumb.jpg" alt="Thumbnail 4" class="thumbnail" onclick="openModal(3)">
-    </div>
+<section class="hero">
+
+<h1>Media & Recognition</h1>
+
+<p>Moments from events, talks and recognitions over the years.</p>
+
 </section>
 
-<!-- Modal for image slider -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-        <div class="modal-slides">
-            <img src="images/image1.jpg" alt="Image 1">
-        </div>
-        <div class="modal-slides">
-            <img src="images/image2.jpg" alt="Image 2">
-        </div>
-        <div class="modal-slides">
-            <img src="images/image3.jpg" alt="Image 3">
-        </div>
-        <div class="modal-slides">
-            <img src="images/image4.jpg" alt="Image 4">
-        </div>
 
-        <!-- Previous and Next controls -->
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
-</div>
-<!--Awards-->
-<section class="award-section">
-  <h2>WALL OF FAME</h2>
+<section>
 
-  <div class="award-grid">
+<h2>Gallery</h2>
 
-      <div class="award-card">
-          <h3> Emerging Face of Global Leadership 2022</h3>
-          <p>Honoured by IAS Officer (New Delhi) Ira Singhal </p>
-        </div>
+<div class="gallery">
 
+<img src="images/image1.jpg" alt="Event photo">
+<img src="images/image2.jpg" alt="Event photo">
+<img src="images/image3.jpg" alt="Event photo">
+<img src="images/image4.jpg" alt="Event photo">
 
-    <div class="award-card">
-      <h3>Most Promising Personality in Literature and Technology 2020</h3>
-      <p>International Youth Conference Euphoria 2020 (Organized at New Delhi, India)</p>
-    </div>
-
-    <div class="award-card">
-      <h3>National Seema Aparajita Award (Nominee)</h3>
-      <p>Guftagu, National Urdu Community for Outstanding Contribution in Literature.</p>
-    </div>
-
-    <div class="award-card">
-      <h3>Author of the Year 2019 (Psychology) & Most Inspirational Author of 2020 (Psychology) </h3>
-      <p>NE8x International Literature Fest.</p>
-    </div>
-
-    <div class="award-card">
-      <h3>Title : Pride of Prayagraj</h3>
-      <p>Presented by RL Hangloo(Ex Vice-Chancellor, Allahabad University) and NKS Gaur ( Ex Education Minister Uttar Pradesh).</p>
-    </div>
-
-    <div class="award-card">
-      <h3>International Youth Icon Award 2019</h3>
-      <p>DeepTech India 2019 – Presented by Mr. Babulal Jain (Chairman WICS Connect Group)</p>
-    </div>
-
-    <div class="award-card">
-      <h3>Special Contribution in Mental Health</h3>
-      <p>Presented by Padma Shree Satya Prakash</p>
-    </div>
-
-
-<div class="award-card">
-  <h3>Outstanding Performance in Literature</h3>
-  <p>Penaroma, The literature Society, New Delhi</p>
-</div>
-
-
-<div class="award-card">
-<h3>Special Contribution in Mental Health</h3>
-<p>Presented by Padma Shree Satya Prakash</p>
-</div>
-
-<div class="award-card">
-<h3>Outstanding Performing Speakers Award 2019</h3>
-<p>Abhikavya Sahitya Sangosti, New Delhi</p>
-</div>
-
-<div class="award-card">
-<h3>Top 10 Indian Writers in India</h3>
-<p>Story Mirror 2018</p>
-</div>
 </div>
 
 </section>
-    <!-- Footer Section -->
-    <div id="footer-placeholder"></div>
-    <script>
-        fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-    </script>
-    
-    <!-- End of Footer Section -->
+
+
+<section>
+
+<h2>Awards & Recognition</h2>
+
+<div class="awards">
+
+<div class="award">
+<h3>Emerging Face of Global Leadership (2022)</h3>
+<p>Honoured by IAS Officer Ira Singhal.</p>
+</div>
+
+<div class="award">
+<h3>Most Promising Personality in Literature & Technology (2020)</h3>
+<p>International Youth Conference Euphoria.</p>
+</div>
+
+<div class="award">
+<h3>Author of the Year (Psychology)</h3>
+<p>NE8x International Literature Fest.</p>
+</div>
+
+<div class="award">
+<h3>International Youth Icon Award</h3>
+<p>DeepTech India Conference.</p>
+</div>
+
+<div class="award">
+<h3>Pride of Prayagraj</h3>
+<p>Presented by Allahabad University leadership.</p>
+</div>
+
+<div class="award">
+<h3>Top 10 Indian Writers</h3>
+<p>Recognized by StoryMirror.</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+© 2026 Ayushi Singh
+
+</footer>
 
 </body>
+
 </html>
