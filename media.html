@@ -1,212 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Media & Awards | Ayushi Singh</title>
-
-<link rel="icon" href="images/Favicon.png">
-
-<style>
-
-/* Base */
-
-body{
-font-family: system-ui, sans-serif;
-margin:0;
-line-height:1.6;
-color:#111;
-background:#fff;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-}
-
-/* Navigation */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
-border-bottom:1px solid #eee;
-}
-
-nav a{
-text-decoration:none;
-color:#111;
-margin-left:20px;
-font-size:14px;
-}
-
-/* Hero */
-
-.hero{
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:34px;
-margin-bottom:10px;
-}
-
-.hero p{
-color:#666;
-}
-
-/* Sections */
-
-section{
-margin-top:60px;
-}
-
-h2{
-font-size:22px;
-margin-bottom:20px;
-}
-
-/* Image Gallery */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-height:auto;
-border:1px solid #eee;
-}
-
-/* Awards */
-
-.awards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.award{
-border:1px solid #eee;
-padding:20px;
-}
-
-/* Footer */
-
-footer{
-margin-top:80px;
-padding:20px;
-border-top:1px solid #eee;
-text-align:center;
-font-size:14px;
-color:#777;
-}
-
-</style>
-
+<title>Media | Ayushi Singh</title>
+<link rel="icon" href="/images/Favicon.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/include.js" defer></script>
+<script src="/js/scripts.js" defer></script>
 </head>
-
 <body>
 
-<nav>
+<!-- Navbar -->
+<div include-html="components/navbar.html"></div>
 
-<strong>Ayushi Singh</strong>
-
-<div>
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="books.html">Books</a>
-<a href="speaking.html">Speaking</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-
-
-<div class="container">
-
-<section class="hero">
-
-<h1>Media & Recognition</h1>
-
-<p>Moments from events, talks and recognitions over the years.</p>
-
+<!-- Hero Section -->
+<section class="hero text-center position-relative">
+  <img src="/images/Banners/6.jpg" alt="Media Hero" class="img-fluid w-100 hero-image">
+  <div class="hero-content position-absolute top-50 start-50 translate-middle text-white">
+    <h1>Media Coverage</h1>
+    <p>Articles, interviews, and press features</p>
+  </div>
 </section>
 
+<!-- Media Grid -->
+<main class="container py-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/media1.png" class="card-img-top" alt="Media 1">
+        <div class="card-body">
+          <h5 class="card-title">Interview with XYZ</h5>
+          <p class="card-text">Discussing my latest book and writing journey.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/media2.png" class="card-img-top" alt="Media 2">
+        <div class="card-body">
+          <h5 class="card-title">Magazine Feature</h5>
+          <p class="card-text">Highlighting my projects in tech innovation.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="images/media3.png" class="card-img-top" alt="Media 3">
+        <div class="card-body">
+          <h5 class="card-title">Online Publication</h5>
+          <p class="card-text">Insights on AI and productivity tools.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
-<section>
-
-<h2>Gallery</h2>
-
-<div class="gallery">
-
-<img src="images/image1.jpg" alt="Event photo">
-<img src="images/image2.jpg" alt="Event photo">
-<img src="images/image3.jpg" alt="Event photo">
-<img src="images/image4.jpg" alt="Event photo">
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Awards & Recognition</h2>
-
-<div class="awards">
-
-<div class="award">
-<h3>Emerging Face of Global Leadership (2022)</h3>
-<p>Honoured by IAS Officer Ira Singhal.</p>
-</div>
-
-<div class="award">
-<h3>Most Promising Personality in Literature & Technology (2020)</h3>
-<p>International Youth Conference Euphoria.</p>
-</div>
-
-<div class="award">
-<h3>Author of the Year (Psychology)</h3>
-<p>NE8x International Literature Fest.</p>
-</div>
-
-<div class="award">
-<h3>International Youth Icon Award</h3>
-<p>DeepTech India Conference.</p>
-</div>
-
-<div class="award">
-<h3>Pride of Prayagraj</h3>
-<p>Presented by Allahabad University leadership.</p>
-</div>
-
-<div class="award">
-<h3>Top 10 Indian Writers</h3>
-<p>Recognized by StoryMirror.</p>
-</div>
-
-</div>
-
-</section>
-
-</div>
-
-
-<footer>
-
-© 2026 Ayushi Singh
-
-</footer>
-
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+fetch('components/footer.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
