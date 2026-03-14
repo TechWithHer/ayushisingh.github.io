@@ -1,10 +1,11 @@
 # My Personal Website | Hosted on GITHUB SERVER
 
-My site is live at https://techwithher.github.io/ayushisingh.github.io/
 <img src="ss/hero.png">
 
 ## Overview
-This project contains the source code for my sample personal portfolio website. The website is built using simple front-end technologies and is hosted using GitHub Pages. FYI: My real website is www.ayushisingh.com
+This project contains the source code for my sample personal portfolio website. The website is built using simple front-end technologies and is hosted using GitHub Pages. 
+
+My site just a project and is live at https://techwithher.github.io/ayushisingh.github.io/. The real website is www.ayushisingh.com
 
 The purpose of this project is to showcase:
 
