@@ -1,5 +1,3 @@
-README.md: This file should include:
-
 # My Personal Website | Hosted on GITHUB
 
 ### FYI: My real website is www.ayushisingh.com
