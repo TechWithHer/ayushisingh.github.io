@@ -1,322 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Ayushi Singh</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="script.js"></script>
-    <script src="js/include.js"></script> 
-    <link rel="icon" href="/images/Favicon.png" type="image/png">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Ayushi Singh</title>
+
+<link rel="icon" href="images/Favicon.png">
+
+<style>
+
+/* Base */
+
+body{
+font-family: system-ui, sans-serif;
+margin:0;
+line-height:1.6;
+color:#111;
+background:#fff;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+border-bottom:1px solid #eee;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+margin-left:20px;
+font-size:14px;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#666;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:10px 18px;
+border:1px solid #111;
+text-decoration:none;
+color:#111;
+font-size:14px;
+}
+
+/* Sections */
+
+section{
+margin-top:60px;
+}
+
+h2{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+border:1px solid #eee;
+padding:20px;
+}
+
+/* Footer */
+
+footer{
+margin-top:80px;
+padding:20px;
+border-top:1px solid #eee;
+text-align:center;
+font-size:14px;
+color:#777;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<!-- Navigation Bar Section -->
-<div include-html="components/navbar.html"></div>
-<!-- End of Navigation Bar Section -->
+<nav>
 
-<!-- Hero Section -->
-<div class="hero">
-    <img src="/images/Banners/10.png" alt="Hero Image" class="hero-image">
-    <div class="hero-content">
-      <h1>I believe in Psychology, Technology and Little Magic!</h1>
-      <p>I am an Author, Coder, Entrepreneur, Public Speaker & Believer</p>
-      <a href="https://chat.whatsapp.com/EWha4wltgYKKKiiNm5D86G" target="_blank" class="cta-button">Join My Whatsaap Community </a>
-    </div>
-  </div>
-  
-<!-- End of Hero Section -->
+<strong>Ayushi Singh</strong>
 
-<!-- About Section -->
-<section class="about-me">
-    <div class="about-me-container">
-        <!-- Left Section: Image -->
-        <div class="about-me-image">
-            <img src="images/your-image.jpg" alt="Ayushi Singh">
-        </div>
-        <!-- Right Section: Content -->
-        <div class="about-me-text">
-            <h2>About Me</h2>
-            <h4>Author | Public Speaker | Tech Entrepreneur | Python Expert</h4>
-            <p>I’m Ayushi, someone who enjoys blending technology with human insights. My journey has taken me from writing books to building innovative tech solutions. At Strenure AI, based in Singapore, we focus on crafting custom software that supports businesses around the globe, helping them navigate their digital transformation.</p>
-            <p>As both an author and a speaker, I explore the intersection of human psychology and technology. This perspective allows me to create solutions that feel natural and intuitive for users, keeping the human element at the core of every innovation.</p>
-            <div class="btn-group">
-                <a href="books.html" class="btn btn-secondary">Books</a>
-                <a href="speaking.html" class="btn btn-secondary">Speaking Engagements</a>
-            </div>
-        </div>
-    </div>
+<div>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="books.html">Books</a>
+<a href="speaking.html">Speaking</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+
+<div class="container">
+
+<section class="hero">
+
+<h1>Psychology. Technology. A little magic.</h1>
+
+<p>Author • Developer • Entrepreneur • Public Speaker</p>
+
+<a class="button" href="projects.html">View Projects</a>
+
 </section>
-<!--Awards-->
-<section class="award-section">
-    <h2>WALL OF FAME</h2>
-
-    <div class="award-grid">
-
-        <div class="award-card">
-            <h3> Emerging Face of Global Leadership 2022</h3>
-            <p>Honoured by IAS Officer (New Delhi) Ira Singhal </p>
-          </div>
 
 
-      <div class="award-card">
-        <h3>Most Promising Personality in Literature and Technology 2020</h3>
-        <p>International Youth Conference Euphoria 2020 (Organized at New Delhi, India)</p>
-      </div>
-  
-      <div class="award-card">
-        <h3>National Seema Aparajita Award (Nominee)</h3>
-        <p>Guftagu, National Urdu Community for Outstanding Contribution in Literature.</p>
-      </div>
-  
-      <div class="award-card">
-        <h3>Author of the Year 2019 (Psychology) & Most Inspirational Author of 2020 (Psychology) </h3>
-        <p>NE8x International Literature Fest.</p>
-      </div>
-  
-      <div class="award-card">
-        <h3>Title : Pride of Prayagraj</h3>
-        <p>Presented by RL Hangloo(Ex Vice-Chancellor, Allahabad University) and NKS Gaur ( Ex Education Minister Uttar Pradesh).</p>
-      </div>
-  
-      <div class="award-card">
-        <h3>International Youth Icon Award 2019</h3>
-        <p>DeepTech India 2019 – Presented by Mr. Babulal Jain (Chairman WICS Connect Group)</p>
-      </div>
-  
-      <div class="award-card">
-        <h3>Special Contribution in Mental Health</h3>
-        <p>Presented by Padma Shree Satya Prakash</p>
-      </div>
+<section>
 
-  
-  <div class="award-card">
-    <h3>Outstanding Performance in Literature</h3>
-    <p>Penaroma, The literature Society, New Delhi</p>
-  </div>
+<h2>About</h2>
+
+<p>
+I’m Ayushi Singh. I enjoy exploring the intersection of technology and human psychology.
+My work spans writing, public speaking, and building software that helps organizations
+navigate digital transformation.
+</p>
+
+</section>
 
 
-<div class="award-card">
-  <h3>Special Contribution in Mental Health</h3>
-  <p>Presented by Padma Shree Satya Prakash</p>
+<section>
+
+<h2>Highlights</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Books</h3>
+<p>Exploring human psychology, leadership and technology.</p>
 </div>
 
-<div class="award-card">
-  <h3>Outstanding Performing Speakers Award 2019</h3>
-  <p>Abhikavya Sahitya Sangosti, New Delhi</p>
+<div class="card">
+<h3>Speaking</h3>
+<p>Talks and workshops on technology, mindset and innovation.</p>
 </div>
 
-<div class="award-card">
-  <h3>Top 10 Indian Writers in India</h3>
-  <p>Story Mirror 2018</p>
+<div class="card">
+<h3>Projects</h3>
+<p>Technology projects focused on automation, AI and software systems.</p>
 </div>
+
 </div>
 
 </section>
 
-<!-- ImageSlider.html -->
-<section class="instagram-slider">
-	<div class="slider-container">
-		<div class="slider">
-			<img src="../images/HomePage Slider/1.jpg" data-full-src="../images/HomePage Slider/1-large.jpg" alt="Photo 1" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/2.jpg" data-full-src="../images/HomePage Slider/2-large.jpg" alt="Photo 2" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/3.jpg" data-full-src="../images/HomePage Slider/3-large.jpg" alt="Photo 3" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/4.jpg" data-full-src="../images/HomePage Slider/4-large.jpg" alt="Photo 4" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/5.jpg" data-full-src="../images/HomePage Slider/5-large.jpg" alt="Photo 5" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/6.jpg" data-full-src="../images/HomePage Slider/6-large.jpg" alt="Photo 6" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/7.jpg" data-full-src="../images/HomePage Slider/7-large.jpg" alt="Photo 7" class="slider-image" onclick="openLightbox(this)">
-			<img src="../images/HomePage Slider/8.jpg" data-full-src="../images/HomePage Slider/8-large.jpg" alt="Photo 8" class="slider-image" onclick="openLightbox(this)">
-		</div>
-	</div>
-  
-	<!-- Lightbox Popup -->
-	<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-		<span class="close">&times;</span>
-		<img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
-	</div>
-</section>
-
-<script>
-// Open Lightbox
-function openLightbox(imgElement) {
-	const lightbox = document.getElementById('lightbox');
-	const lightboxImg = document.getElementById('lightbox-img');
-	lightboxImg.src = imgElement.getAttribute("data-full-src");
-	lightbox.style.display = 'flex';
-}
-
-// Close Lightbox
-function closeLightbox() {
-	document.getElementById('lightbox').style.display = 'none';
-}
-
-// Slider Looping
-const slider = document.querySelector('.slider');
-let scrollInterval;
-
-function startSliderLoop() {
-	scrollInterval = setInterval(() => {
-		slider.scrollBy({
-			left: 100, // Adjust left offset to change scroll speed
-			behavior: 'smooth'
-		});
-
-		if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
-			slider.scrollLeft = 0; // Reset to the beginning
-		}
-	}, 4000); // Change interval to slow down the speed
-}
-
-function stopSliderLoop() {
-	clearInterval(scrollInterval);
-}
-
-window.onload = function() {
-	startSliderLoop();
-	slider.addEventListener('mouseenter', stopSliderLoop);
-	slider.addEventListener('mouseleave', startSliderLoop);
-};
-</script>
-
-<style>
-.instagram-slider {
-	max-width: 100%;
-	overflow: hidden;
-}
-
-.slider {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
-
-.slider img {
-	width: 100%; /* Default for mobile - full width */
-	height: auto;
-	flex-shrink: 0;
-}
-
-/* Adjust for desktop screens */
-@media (min-width: 768px) {
-	.slider img {
-		width: 80%; /* Smaller image size for desktop */
-		height: auto;
-	}
-}
-
-.lightbox {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	justify-content: center;
-	align-items: center;
-}
-
-.lightbox-content {
-	max-width: 90%;
-	max-height: 90%;
-}
-
-.close {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	font-size: 30px;
-	color: #fff;
-	cursor: pointer;
-}
-</style>
+</div>
 
 
-<!-- Services Section -->
-<section class="services-section">
-    <div class="services-card">
-        <img src="images/8.png" alt="Consultation">
-        <h2>Consultation</h2>
-        <p>Empowering businesses with tailored tech strategies and insights to drive growth and innovation.</p>
-        <a href="https://calendly.com/strenureconsultation/30min" target="_blank" class="btn">Reach Out</a>
-    </div>
+<footer>
 
-    <div class="services-card">
-        <img src="images/7.png" alt="Development">
-        <h2>Development</h2>
-        <p>Transforming ideas into robust, scalable software and applications with cutting-edge technologies.</p>
-        <a href="https://calendly.com/strenureconsultation/30min" target="_blank" class="btn">Reach Out</a>
-    </div>
+© 2026 Ayushi Singh
 
-    <div class="services-card">
-        <img src="images/9.png" alt="Tech Training">
-        <h2>Tech Training</h2>
-        <p>Equipping teams with essential skills and knowledge through customized training programs.</p>
-        <a href="https://calendly.com/strenureconsultation/30min" target="_blank" class="btn">Reach Out</a>
-    </div>
-</section>
+</footer>
 
-<!-- Testimonial Slider Section -->
-<section class="testimonial-slider">
-    <div class="slider-wrapper">
-        <!-- Slide 1 -->
-        <div class="testimonial-slide">
-            <h3>Amazing Service!</h3>
-            <p>"Strenure AI transformed our business processes with their custom software solutions. They truly understand our needs."</p>
-            <p class="client-info">John Doe</p>
-            <p class="client-position">CEO, Tech Innovators</p>
-        </div>
-        <!-- Slide 2 -->
-        <div class="testimonial-slide">
-            <h3>Highly Recommend</h3>
-            <p>"The team at Strenure AI was professional and delivered beyond expectations. Their innovative ideas took our project to the next level."</p>
-            <p class="client-info">Sarah Lee</p>
-            <p class="client-position">CTO, FutureTech</p>
-        </div>
-        <!-- Slide 3 -->
-        <div class="testimonial-slide">
-            <h3>Exceptional Results</h3>
-            <p>"We saw a remarkable increase in productivity after implementing the solutions provided by Strenure AI. Their expertise is top-notch."</p>
-            <p class="client-info">David Smith</p>
-            <p class="client-position">Head of Operations, Digital Wave</p>
-        </div>
-        <!-- Slide 4 -->
-        <div class="testimonial-slide">
-            <h3>Outstanding Support</h3>
-            <p>"Their post-launch support is just as impressive as the development process. We're grateful for their continuous dedication."</p>
-            <p class="client-info">Emily Johnson</p>
-            <p class="client-position">COO, CloudWorks</p>
-        </div>
-        <!-- Slide 5 -->
-        <div class="testimonial-slide">
-            <h3>Top-Quality Solutions</h3>
-            <p>"Strenure AI's solutions are innovative and incredibly reliable. We are happy with the outcome of our collaboration."</p>
-            <p class="client-info">Michael Brown</p>
-            <p class="client-position">Founder, Smart Solutions Inc.</p>
-        </div>
-    </div>
-</section>
-
- 
-<!-- Footer -->
-<div id="footer-placeholder"></div>
-<script>
-    fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
