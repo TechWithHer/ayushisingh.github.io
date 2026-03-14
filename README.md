@@ -95,4 +95,6 @@ Ways to reach out and connect.
 
 ### Some Helpful Screenshots for Overview: 
 
+<img src="ss/1.png">
+
 
