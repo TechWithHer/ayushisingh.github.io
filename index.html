@@ -1,189 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Ayushi Singh</title>
+<link rel="icon" href="/images/Favicon.png" type="image/png">
 
-<link rel="icon" href="images/Favicon.png">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
 
-<style>
-
-/* Base */
-
-body{
-font-family: system-ui, sans-serif;
-margin:0;
-line-height:1.6;
-color:#111;
-background:#fff;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-}
-
-/* Navigation */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
-border-bottom:1px solid #eee;
-}
-
-nav a{
-text-decoration:none;
-color:#111;
-margin-left:20px;
-font-size:14px;
-}
-
-/* Hero */
-
-.hero{
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:36px;
-margin-bottom:10px;
-}
-
-.hero p{
-color:#666;
-}
-
-.button{
-display:inline-block;
-margin-top:20px;
-padding:10px 18px;
-border:1px solid #111;
-text-decoration:none;
-color:#111;
-font-size:14px;
-}
-
-/* Sections */
-
-section{
-margin-top:60px;
-}
-
-h2{
-font-size:22px;
-margin-bottom:15px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-border:1px solid #eee;
-padding:20px;
-}
-
-/* Footer */
-
-footer{
-margin-top:80px;
-padding:20px;
-border-top:1px solid #eee;
-text-align:center;
-font-size:14px;
-color:#777;
-}
-
-</style>
-
+<!-- JS Scripts -->
+<script defer src="js/scripts.js"></script>
+<script defer src="js/include.js"></script>
 </head>
 
 <body>
 
-<nav>
+<!-- Navbar -->
+<div include-html="components/navbar.html"></div>
 
-<strong>Ayushi Singh</strong>
-
-<div>
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="books.html">Books</a>
-<a href="speaking.html">Speaking</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-
-<div class="container">
-
-<section class="hero">
-
-<h1>Psychology. Technology. A little magic.</h1>
-
-<p>Author • Developer • Entrepreneur • Public Speaker</p>
-
-<a class="button" href="projects.html">View Projects</a>
-
+<!-- Hero Section -->
+<section class="hero text-center">
+  <img src="images/Banners/6.jpg" alt="Hero Banner" class="hero-image">
+  <div class="hero-content">
+    <h1>Welcome to My World</h1>
+    <p>Books, Insights, and Public Speaking on Human & AI Minds</p>
+    <a href="projects.html" class="btn btn-primary mt-3">Explore Projects</a>
+  </div>
 </section>
 
+<!-- Books Section -->
+<section class="books py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">My Books</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100 text-center">
+          <img src="images/book1.png" class="card-img-top" alt="Child of True Lovers">
+          <div class="card-body">
+            <h5 class="card-title">Child of True Lovers</h5>
+            <p class="card-text">You see the shadow of your personality in your child...</p>
+            <a href="https://www.amazon.in/Child-True-Lovers-Ayushi-Singh/dp/B07L93Q6MH" target="_blank" class="btn btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
 
-<section>
-
-<h2>About</h2>
-
-<p>
-I’m Ayushi Singh. I enjoy exploring the intersection of technology and human psychology.
-My work spans writing, public speaking, and building software that helps organizations
-navigate digital transformation.
-</p>
-
+      <!-- Additional books can follow the same structure -->
+    </div>
+  </div>
 </section>
 
-
-<section>
-
-<h2>Highlights</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Books</h3>
-<p>Exploring human psychology, leadership and technology.</p>
-</div>
-
-<div class="card">
-<h3>Speaking</h3>
-<p>Talks and workshops on technology, mindset and innovation.</p>
-</div>
-
-<div class="card">
-<h3>Projects</h3>
-<p>Technology projects focused on automation, AI and software systems.</p>
-</div>
-
-</div>
-
+<!-- Free Gift / CTA Section -->
+<section class="cta text-center py-5 bg-light">
+  <div class="container">
+    <h3>Get Your Free E-Book</h3>
+    <p>Tell us which book you want, and we’ll send it to you!</p>
+    <a href="contact.html" class="btn btn-primary">Request Now</a>
+  </div>
 </section>
 
-</div>
+<!-- Footer -->
+<div include-html="components/footer.html"></div>
 
-
-<footer>
-
-© 2026 Ayushi Singh
-
-</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
